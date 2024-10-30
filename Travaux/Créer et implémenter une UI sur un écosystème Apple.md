@@ -1,5 +1,22 @@
 Nos recherches sont basées sur une liste de ressources disponible [[Ressources utilisées créer et implémenter une UI sur écosystème Apple|ici]]. Le compte rendu de ces recherches est présenté dans ce document à l'aide d'[[L'application Obsidian|Obsidian md]].
 
+Les **Human Interface Guidelines ** d'Apple fournissent des recommandations essentielles pour créer des interfaces intuitives et cohérentes sur leurs plateformes. Elles mettent l'accent sur :
+- Couleurs : Utilisation de palettes adaptées qui respectent les normes de contraste.
+- Typographie : Choix de polices standardisées, telles que San Francisco.
+- Navigation : Structuration de l'interface avec des éléments familiers aux utilisateurs d’Apple, comme les barres de navigation et les gestes tactiles.
+- Interaction : Conception d’éléments interactifs, tels que les boutons et les curseurs, qui réagissent de manière tactile et visuelle, intégrant des retours haptiques sur les appareils compatibles.
+
+## Accessibilité
+
+Apple priorise l’**accessibilité** pour garantir que toutes les applications soient utilisables par un large éventail d'utilisateurs. Les fonctionnalités clés incluent :
+
+- **VoiceOver** : Un lecteur d'écran intégré permettant aux utilisateurs malvoyants d'interagir avec leurs appareils Apple via des gestes tactiles.
+- **Tailles de texte adaptatives** : Options pour ajuster la taille et le style du texte dans les applications, en utilisant des paramètres dynamiques pour s'adapter aux préférences de l'utilisateur.
+- **Accessibilité tactile **: Ajustements possibles pour la taille et la sensibilité des éléments tactiles, facilitant l'interaction sur les appareils Apple.
+- **Descriptions alternatives** : Intégration de descriptions pour les images et éléments non textuels, permettant aux utilisateurs d’accéder aux contenus visuels à travers des lecteurs d'écran.
+    
+
+**
 ## Les technologies
 SwiftUI vs UIKit
 
@@ -54,3 +71,4 @@ De même, il faut éviter d’utiliser des objets 3D “collés” à l’axe du
 ### Mouvement dans une fenêtre
 Le contenu mouvant d’une fenêtre contenue dans l’espace vidéo est aussi important. Si une vidéo, dans une fenêtre stationnaire, est un espace qui bouge par exemple, le cerveau pourrait l’interpréter comme étant un mouvement de l’utilisateur lui-même. Dans ce cas, il pourrait être plus agréable de garder l’horizon de ce paysage en alignement avec l’horizon de l’espace réel. Aussi, le mouvement doit se faire vers le point focus (centre de l’horizon, idéalement en face des yeux), mais aussi rester lent et prédictible. Tout mouvement de rotation trop brusque pourrait donner des nausées à l’utilisateur. L’expérience utilisateur est aussi plus agréable si les objets virtuels que rencontrent le joueur sont petits, et visuellement loin. L’utilisation de textures plus “plates”, moins détaillées et moins contrastées, seraient, dans cet exemple précis, plus agréables étant donné que l’oreille interne ne perçoit pas ce mouvement comme étant celui du corps de l’utilisateur.
 ### Mouvement oscillants
+Par rapport aux animations en elle-même, les oscillations sont à éviter. Ou alors en baisser l’amplitude pour la rendre moins perceptible par l'œil. Des mouvements en douceur sont la meilleure solution dans ce genre d’environnement utilisateur.
